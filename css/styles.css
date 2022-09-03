@@ -100,6 +100,10 @@ footer {
 /*******************************************************************/
 /************* card like layyout for portfolio project  ************/
 /*******************************************************************/
+#portfolio a {
+  position: relative;
+}
+
 .card-layout {
   box-shadow: 0 10px 30px -15px #292929;
   background-color: #1f1f1f;
@@ -144,6 +148,21 @@ footer {
   transform: scale(1.1);
 }
 
+.project-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.project-img:hover {
+  opacity: 0.5;
+}
+
 /* ==================================================================== */
 /*                        header/navagation                             */
 /* ==================================================================== */
@@ -182,14 +201,12 @@ nav a {
 nav a:hover {
   color: #750037;
 }
-nav button {
+nav .button {
   width: 28px;
   height: 30px;
   border-radius: 3px;
-  border-style: none;
   padding: 0;
   margin: 0 auto;
-  background-color: #333333;
 }
 
 /****** menu/close button ********/

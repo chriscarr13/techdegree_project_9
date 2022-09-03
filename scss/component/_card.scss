@@ -1,7 +1,9 @@
 /*******************************************************************/
 /************* card like layyout for portfolio project  ************/
 /*******************************************************************/
-
+#portfolio a {
+    position: relative;
+}
 .card-layout {
     box-shadow: 0 10px 30px -15px rgb(41,41,41);
     background-color: rgb(31,31,31);
@@ -54,3 +56,17 @@
     transform: scale(1.1);
 }
 
+.project-img {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    opacity:0;
+    transition: opacity 1s ease-in-out;
+}
+
+.project-img:hover {
+    opacity: .5;
+}
