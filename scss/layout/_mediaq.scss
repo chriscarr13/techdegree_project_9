@@ -1,0 +1,152 @@
+/* ==================================================================== */
+/*                          Mid Size Screen                             */
+/* ==================================================================== */
+@media (min-width: 768px) {
+
+    nav {
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }  
+
+    nav {
+
+        h1 {
+            flex-grow:0;
+        }
+
+        button, .nav-btn, .bar1, .bar2, .bar3{
+            display: none;
+        }
+
+        .sm-display-nav {
+            flex-grow:1;
+        }
+
+        ul {
+            opacity:1;
+            display:block;
+            padding:0;
+            max-height: none;
+
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 15px;
+        }
+
+    }
+    
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #portfolio {
+
+        a {
+            width: 300px;
+        }
+
+        h3 {
+            width:100%;
+        }
+
+    }
+
+    #animation-box, section {
+        //margin-top: 30px;
+        align-self: center;
+    }
+
+}
+
+/* ==================================================================== */
+/*                          large size screen                           */
+/* ==================================================================== */
+@media (min-width: 1024px) {
+
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
+   
+    .grid-container {
+        grid-template-columns:50%;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+        "header animation-box"
+        "main animation-box"
+        "footer animation-box";
+    }
+
+     main {
+        overflow: auto;
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        overflow-y: scroll; 
+    }
+
+    main::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
+
+    #about {
+
+        .hello {
+            margin-top:10px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+        
+        li {
+            padding:10px 0;
+        }
+
+    }
+
+    #animation-box {
+        height: 100%;
+    }
+
+    #animation-box:after {
+        height: 100%;
+    }
+   
+
+    footer {
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content:flex-end;
+        padding:10px;
+    }
+
+    footer {
+
+        ul, p {
+            margin: 0;
+        }
+
+        ul {
+            justify-content: flex-end;
+            gap: 50px;
+            margin-top:5px;
+            padding-right:5px;
+        }
+
+        .socials {
+            flex-grow: 2;
+        }
+
+        .copyright p {
+            font-size: 1em;
+        }
+
+    }
+    
+}

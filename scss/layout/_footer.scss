@@ -1,0 +1,35 @@
+/* ==================================================================== */
+/*                               footer                                 */
+/* ==================================================================== */
+footer {
+
+    ul{
+        padding:0;
+        margin-bottom: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    svg{
+        transition:fill .5s ease-in;
+    }
+
+    svg:hover{
+        fill: $border-clr;
+    }
+   
+}
+
+footer {
+    margin-top: 15px;
+}
+
+.copyright p {
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+}

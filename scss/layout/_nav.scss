@@ -1,0 +1,93 @@
+/* ==================================================================== */
+/*                        header/navagation                             */
+/* ==================================================================== */
+nav {
+  padding: 10px;
+}
+
+.sm-display-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}  
+
+nav{
+
+    h1 {
+      padding-left: 5px;
+    }
+
+    ul {
+      text-align: center;
+      cursor: pointer;
+      opacity: 0;
+      transition: all 3s ease-in-out;
+      max-height: 0;
+      margin:0;
+      padding:0;
+      padding-bottom: 5px
+    }
+
+    li {
+      padding: 15px 0;
+      
+    }
+
+    a {
+      transition: color .5s ease-in;
+    }
+
+    a:hover {
+      color: $border-clr;
+    }
+
+    button {
+      width: 28px;
+      height: 30px;
+      border-radius: 3px;
+      border-style: none;
+      padding: 0;
+      margin: 0 auto;
+      background-color: rgb(51, 51, 51);
+    }
+
+}
+
+  /****** menu/close button ********/
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 3px;
+  background-color: $body-clr;
+  margin: 4px 4px;
+  transition: 0.4s;
+}
+  
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+  
+.change .bar2 {
+  opacity: 0;
+}
+  
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -4px);
+  transform: rotate(45deg) translate(-5px, -4px);
+}
+
+/****** logo icon ******/
+nav h1 {
+  flex-grow: 2;
+}
+
+.show {  
+  display:block;
+  max-height: 220px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
